@@ -1,10 +1,61 @@
-:root {
-    --color-accent: #D4C17F;
-
+/* Fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('PlayfairDisplay')
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* Вариант подключения шриітф */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap'); */
+/* Variables */
+:root {
+    --color-primary: #fff;
+    --color-accent: #d4c17f;
+    
+    --font-family-primary: 'Raleway', sans-serif;
+    --font-family-title: 'Playfair Display', serif;
+    
+    --color-background-primary: #242b33;
+}
+/* UI Components */
+/* Base */
+body {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    font-family: var(--font-family-primary);
+    background-color: #242b33;
+}
 .header {
-    background-color: black;
+    
 }
 .button {
     padding: 10px 40px;
@@ -34,10 +85,12 @@
 }
 
 .soctial-media {
-    background-color: black;
+    ;
 }
 .title {
     color: var(--color-accent);
+    font-family: var(--font-family-title);
+
 }
 
 /* body {
