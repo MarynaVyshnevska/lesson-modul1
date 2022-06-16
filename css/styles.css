@@ -1,0 +1,71 @@
+:root {
+    --color-accent: #D4C17F;
+
+}
+
+.header {
+    background-color: black;
+}
+.button {
+    padding: 10px 40px;
+    color: #fff;
+    background-color: var(--color-accent);
+    border: 1px solid transparent;
+}
+.button:hover {
+    background-color: gold;
+    box-shadow: 0px 0px 2px 2px rgba(212, 193, 127, 0.2);
+}
+.button:focus {
+    background-color: greenyellow
+    box-shadow: 0px 0px 5px 5px rgba(212, 193, 127, 0.2);
+}
+.button:active {
+    background-color: tomato
+}         
+
+.site-nav-link,
+.subnav-link {
+    color: #fff;
+}
+.site-nav-link:hover,
+.subnav-link:hover {
+    color: var(--color-accent);
+}
+
+.soctial-media {
+    background-color: black;
+}
+.title {
+    color: var(--color-accent);
+}
+
+/* body {
+    background-color: tomato;
+} */
+/* .link-test {
+    color: green;
+}
+.link-test:hover, 
+.link-test:focus {
+    color: tomato;
+} */
+/* .header {
+    background-color: tomato;
+}
+
+.site-nav .site-nav-item {
+    background-color: green;
+} */
+
+/* Выбирает ~ все р в данном селекторе */
+/* + ввыбирает первый и второй
+без ничего - все элементы
+.view ~ p {
+    color: aqua;
+}
+
+.subnav .subnav-link {
+    color: crimson;
+} */
+
