@@ -48,15 +48,24 @@
 }
 /* UI Components */
 /* Base */
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: var(--color-primary);
     font-family: var(--font-family-title);
     font-family: var(--font-family-primary);
     background-color: #242b33;
-}
-.header {
+    font-weight: 400;
+    font-size: 16px;
     
 }
+/* глобально по всему иначе класс::selection */
+::selection {
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+}
+
 .button {
     padding: 10px 40px;
     color: #fff;
@@ -76,23 +85,37 @@ body {
 }         
 
 .site-nav-link,
-.subnav-link {
-    color: #fff;
+.subnav-link,
+.footer-menu-link {
+    color: var(--color-primary);
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
+
 }
 .site-nav-link:hover,
-.subnav-link:hover {
+.subnav-link:hover,
+.footer-menu-link:hover {
     color: var(--color-accent);
+    text-decoration: underline
 }
 
-.soctial-media {
-    ;
+.footer-contacts {
+    font-style: normal;
 }
+/* UI */
 .title {
     color: var(--color-accent);
     font-family: var(--font-family-title);
+    font-size: 36px;
+    line-height: 1.3333;
+}
+/* Hero section */
+.hero-title {
+    font-size: 48px;
+    text-align: center;
 
 }
-
 /* body {
     background-color: tomato;
 } */
