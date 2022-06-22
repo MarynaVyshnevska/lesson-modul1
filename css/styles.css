@@ -36,6 +36,24 @@
 }
 /* Вариант подключения шриітф */
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap'); */
+
+/* Normalize */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+address {
+    font-style: normal;
+}
+a {
+    display: inline-block
+}
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 /* Variables */
 :root {
     --color-primary: #fff;
@@ -65,12 +83,52 @@ body {
     color: var(--color-primary);
     background-color: var(--color-accent);
 }
+/* layouts */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+video {
+    width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+}
 
+section {
+    padding: 90px 0;
+}
+.site-nav-item {
+    display: inline-block;
+    
+}
+
+/* .site-nav-item {
+    margin-right: 24px;
+}
+
+.site-nav-item:last-child {
+    margin-right: 24px;
+} */
+
+.site-nav-item +.site-nav-item {
+    margin-left: 24px;
+}
+
+.site-nav-item:hover {
+    border: 1px solid white;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
 .button {
     padding: 10px 40px;
     color: #fff;
     background-color: var(--color-accent);
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .button:hover {
     background-color: gold;
@@ -91,6 +149,7 @@ body {
     font-size: 14px;
     line-height: 1.15;
     text-decoration: none;
+    /* padding: 8px 12px; */
 
 }
 .site-nav-link:hover,
@@ -98,6 +157,18 @@ body {
 .footer-menu-link:hover {
     color: var(--color-accent);
     text-decoration: underline
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    text-align: center;
+    max-width: 556px;
+    margin: 0 auto 100px;
 }
 
 .footer-contacts {
@@ -109,13 +180,32 @@ body {
     font-family: var(--font-family-title);
     font-size: 36px;
     line-height: 1.3333;
+    
 }
-/* Hero section */
-.hero-title {
-    font-size: 48px;
-    text-align: center;
+/* Prices table */
 
+.prices-table {
+    width: 100%;
+    border-collapse: collapse;
 }
+
+.caption {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.prices-table td,
+.prices-table th {
+    padding: 8px 16px;
+    border: 1px solid var(--color-primary);
+    text-align: left;
+}
+.prices-table thead, 
+.prices-table tfoot {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+
 /* body {
     background-color: tomato;
 } */
