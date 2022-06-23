@@ -23,42 +23,44 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="/">
-                <img src="./assets/images/logo.svg" width="165" alt="Logo HouseVOP">
-            </a>
-            <nav>
-                <ul class="site-nav">
-                    <li class="site-nav-item">
-                    <a class="site-nav-link" href="#">Про комплекс</a>
-                    </li>
-                    <li class="site-nav-item">
-                       <a class="site-nav-link" href="#">Район</a>
-                    </li>
-                    <li class="site-nav-item">
-                        <a class="site-nav-link" href="#">Каталог квартир</a>
-                        <ul class="subnav">
-                            <li class="subnav-item">
-                                <a class="subnav-link" href="#">Стандарт</a>
+            <div class="header-inn">
+                <a href="/">
+                        <img src="./assets/images/logo.svg" width="165" alt="Logo HouseVOP">
+                </a>
+                    <nav>
+                        <ul class="site-nav">
+                            <li class="site-nav-item">
+                            <a class="site-nav-link" href="#">Про комплекс</a>
                             </li>
-                            <li class="subnav-item">
-                                <a class="subnav-link" href="#">Комфорт</a>
+                            <li class="site-nav-item">
+                               <a class="site-nav-link" href="#">Район</a>
                             </li>
-                            <li class="subnav-item">
-                                <a class="subnav-link" href="#">люкс</a>
+                         <li class="site-nav-item">
+                                <a class="site-nav-link" href="#">Каталог квартир</a>
+                                <ul class="subnav">
+                                    <li class="subnav-item">
+                                        <a class="subnav-link" href="#">Стандарт</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a class="subnav-link" href="#">Комфорт</a>
+                                    </li>
+                                    <li class="subnav-item">
+                                        <a class="subnav-link" href="#">люкс</a>
+                                    </li>
+                                 <li class="subnav-item">
+                                        <a class="subnav-link" href="#">Суперлюкс</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="subnav-item">
-                                <a class="subnav-link" href="#">Суперлюкс</a>
+                            <li class="site-nav-item">
+                                <a class="site-nav-link" href="#">Іпотека</a>
+                            </li>
+                            <li class="site-nav-item">
+                               <a class="site-nav-link" href="#">Контакти</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="site-nav-item">
-                        <a class="site-nav-link" href="#">Іпотека</a>
-                    </li>
-                    <li class="site-nav-item">
-                       <a class="site-nav-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
+                    </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -68,15 +70,15 @@
                 <h1 class="hero-title title">
                    Житловий комплекс в історичному центрі
                 </h1>
-                <a href="#benefits">
+                <a class="hero-section-mouse" href="#benefits">
                    <img src="./assets/images/mouse.svg" alt="Перейти далі">
                 </a>
-                <address>
-                    <a class="link" href="#">
-                        <img src="./assets/images/tut.svg" alt="">
+                <address class="hero-section-contacts">
+                    <a class="hero-section-contacts-item link" href="#">
+                        <img class="hero-section-contacts-img"src="./assets/images/placeholder.svg" aria-hidden="true" >
                         вул. Садова 10-15</a>
-                    <a class="link" href="tel:+380991234567">
-                        <img src="./assets/images/tel.svg" alt="">
+                    <a class="hero-section-contacts-item link" href="tel:+380991234567">
+                        <img class="hero-section-contacts-img"src="./assets/images/tel.svg" aria-hidden="true" >
                         +38 (099) 123-45-67</a>
                 </address>
             </div>
@@ -101,26 +103,26 @@
                 </ul>
             </div>
         </section>
-        <section id="ourappartsment section">
+        <section id="section">
             <div class="container"> 
                 <!-- Галерея квартир -->
                 <h2 class="title">Наші квартири</h2>
-                <ul>
-                    <li>
+                <ul class="ourapartsment">
+                    <li class="ourapartsment-item">
                         <img src="./assets/images/1.jpg" alt="Стандарт — 1 поверх">
-                        Стандарт — 1 поверх
+                        <span class="ourapartsment-text">Стандарт — 1 поверх</span>
                     </li>
-                    <li>
+                    <li class="ourapartsment-item">
                         <img src="./assets/images/2.jpg" alt="Комфорт — 2 поверхи">
-                        Комфорт — 2 поверхи
+                        <span class="ourapartsment-text">Комфорт — 2 поверхи</span>
                     </li>
-                   <li>
+                   <li class="ourapartsment-item">
                         <img src="./assets/images/3.jpg" alt="Люкс — 3 поверхи">
-                        Люкс — 3 поверхи
+                        <span class="ourapartsment-text">Люкс — 3 поверхи</span>
                     </li>
-                    <li>
+                    <li class="ourapartsment-item">
                         <img src="./assets/images/4.jpg" alt="Супер Люкс — 4 поверхи">
-                        Супер Люкс — 4 поверхи
+                        <span class="ourapartsment-text">Супер Люкс — 4 поверхи</span>
                     </li>
                 </ul>
             </div>
@@ -186,7 +188,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="container section">
+            <div class="container">
                 <!-- Video -->
                 <h2 class="title">Biдео огляд житлового комплексу</h2>
                 <video controls autoplay loop muted>
@@ -214,40 +216,77 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container section">
-            <address class="footer-contacts">
-                <ul class="footer-menu">
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="#">Про комплекс</a>
-                    </li>
-                    <li class="footer-menu-item">
-                     <a class="footer-menu-link" href="#">Район</a>
-                 </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="#">Каталог квартир</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="#">Іпотека</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>Адреса: <a  href="#">вул. Садова 10-15</a></li>
-                    <li>Телефон: <a href="tel:+380991234567">+38 (099) 123-45-67</a></li>
-                    <li>Відділ продажу: <time datetime="10:00">10:00</time> - <time datetime="20:00">20:00</time></li>
-                    <li>E-mail: <a href="mailto:vip@housevip.ru">vip@housevip.ru</a></li>
-                </ul>
-            <ul class="soctial-media">
-                <li><img src="./assets/images/youtube.svg" alt=""></li>
-             <li><img src="./assets/images/vk.svg" alt=""></li>
-                <li><img src="./assets/images/fb.svg" alt=""></li>
-                <li><img src="./assets/images/insta.svg" alt=""></li>
-            </ul>
-            </address>
-        </div>
+    <footer class="footer">
+        <section class="section">
+            <div class="container">
+                <div class="footer-inn">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <img src="./assets/images/logo.svg" width="165" alt="Logo HouseVOP">
+                        </a>
+                        <p>© 2022 Всі права захищені. HouseVOP</p>
+                    </div>
+                <!-- <div class="footer-menu-inn"> -->
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Про комплекс</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Район</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Каталог квартир</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Іпотека</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+                    <div class="footer-contacts-inn">
+                        <ul class="footer-contacts">
+                            <li>
+                                <p>Адреса: <a class="footer-contacts-link" href="">вул. Садова 10-15</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Телефон: <a class="footer-contacts-link" href="tel:+380991234567">+38 (099) 123-45-67</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Відділ продажу:
+                                    <time datetime="10:00">10:00</time> - <time datetime="20:00">20:00</time>
+                               </p>
+                           </li>
+                         <li>
+                                <p>E-mail: <a class="footer-contacts-link" href="mailto:vip@housevip.ua">vip@housevip.ua</a>
+                             </p>
+                            </li>
+                        </ul>
+                        <ul class="social-media">
+                            <li>
+                                <a class="social-link" href="#">
+                                    <img class="social-img" src="./assets/images/youtube.svg" alt="YouTube"></a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#">
+                                    <img class="social-img" src="./assets/images/vk.svg" alt="VKontakte"></a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#">
+                                    <img class="social-img" src="./assets/images/fb.svg" alt="FaceBook"></a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#">
+                                   <img class="social-img" src="./assets/images/instagram.svg" alt="Instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

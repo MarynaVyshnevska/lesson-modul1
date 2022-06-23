@@ -47,13 +47,19 @@ address {
     font-style: normal;
 }
 a {
-    display: inline-block
+    display: inline-block;
 }
 ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+
 /* Variables */
 :root {
     --color-primary: #fff;
@@ -63,6 +69,7 @@ ul, ol {
     --font-family-title: 'Playfair Display', serif;
     
     --color-background-primary: #242b33;
+    --color-background-secondary: #2D343C;
 }
 /* UI Components */
 /* Base */
@@ -86,8 +93,18 @@ body {
 /* layouts */
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1142px;
     margin: 0 auto;
+    padding: 0 16px;
+}
+/* в одну линию шапку */
+.header-inn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;}
+
+.site-nav {
+    display: flex;
 }
 video {
     width: 100%;
@@ -123,6 +140,7 @@ section {
     text-decoration: none;
     color: var(--color-primary);
 }
+
 .button {
     padding: 10px 40px;
     color: #fff;
@@ -140,21 +158,37 @@ section {
 }
 .button:active {
     background-color: tomato
-}         
+}    
+.hero-section-mouse {
+    margin-bottom: 200px;
+}     
+.hero-section-contacts {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.hero-section-contacts-item:hover {
+    color: var(--color-accent);
+    text-decoration: underline
+}
+
 
 .site-nav-link,
 .subnav-link,
-.footer-menu-link {
+.footer-menu-link, 
+.footer-contacts-link {
     color: var(--color-primary);
     font-size: 14px;
-    line-height: 1.15;
+    line-height: 1.17;
     text-decoration: none;
     /* padding: 8px 12px; */
 
 }
 .site-nav-link:hover,
 .subnav-link:hover,
-.footer-menu-link:hover {
+.footer-menu-link:hover,
+.footer-contacts-link:hover {
     color: var(--color-accent);
     text-decoration: underline
 }
@@ -170,10 +204,21 @@ section {
     max-width: 556px;
     margin: 0 auto 100px;
 }
-
-.footer-contacts {
-    font-style: normal;
+/* Our Apartsment */
+.ourapartsment {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 }
+
+.ourapartsment-item {
+    flex-basis: 50%;
+    padding: 15px;
+}
+.ourapartsment-text {
+    display: block;
+}
+
 /* UI */
 .title {
     color: var(--color-accent);
@@ -205,33 +250,47 @@ section {
     background-color: rgba(255, 255, 255, 0.1);;
 }
 
-
-/* body {
-    background-color: tomato;
-} */
-/* .link-test {
-    color: green;
-}
-.link-test:hover, 
-.link-test:focus {
-    color: tomato;
-} */
-/* .header {
-    background-color: tomato;
+/* Footer */
+.footer {
+    padding: 48px 0;
+    background-color: var(--color-background-secondary);
 }
 
-.site-nav .site-nav-item {
-    background-color: green;
-} */
-
-/* Выбирает ~ все р в данном селекторе */
-/* + ввыбирает первый и второй
-без ничего - все элементы
-.view ~ p {
-    color: aqua;
+.footer-inn {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.subnav .subnav-link {
-    color: crimson;
-} */
+.social-media {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    margin-left: -10px;
+}
 
+.footer-contacts,
+.footer-menu-item {
+    font-size: 14px;
+    line-height: 1.17 
+    letter-spacing: 0.05em;
+}
+
+.social-img {
+    width: 20px;
+    height: 20px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-link {
+    padding: 10px;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
