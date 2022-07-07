@@ -18,6 +18,8 @@
             background-color: green;
         }
     </style> -->
+    <!-- Библиотека по анимации -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -37,6 +39,7 @@
                         </li>
                         <li class="site-nav-item">
                             <a class="site-nav-link" href="#">Каталог квартир</a>
+                            <div class="subnav-border">
                             <ul class="subnav">
                                 <li class="subnav-item">
                                     <a class="subnav-link" href="#">Стандарт</a>
@@ -51,6 +54,7 @@
                                     <a class="subnav-link" href="#">Суперлюкс</a>
                                 </li>
                             </ul>
+                            </div>
                         </li>
                         <li class="site-nav-item">
                             <a class="site-nav-link" href="#">Іпотека</a>
@@ -67,7 +71,7 @@
         <section class="hero-section section">
             <div class="container">
                 <!-- Шапка -->
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-aos="zoom-in-down">
                    Житловий комплекс в історичному центрі
                 </h1>
                 <a class="hero-section-mouse" href="#benefits" >
@@ -102,10 +106,10 @@
                 </address>
             </div>
         </section>
-        <section id="benefits section">
+        <section id="benefits" class="section">
             <div class="container">
                 <!-- Іконки -->
-                <h2 class="our-title">Наші переваги</h2>
+                <h2 class="our-title" data-aos="zoom-in-down">Наші переваги</h2>
                 <ul class="benefit-list">
                     <li class="benefit-item">
                         <svg class="benefit-title-icon" aria-hidden="true">
@@ -137,23 +141,38 @@
         <section id="section">
             <div class="container"> 
                 <!-- Галерея квартир -->
-                <h2 class="our-title">Наші квартири</h2>
+                <h2 class="our-title" data-aos="zoom-in-down">Наші квартири</h2>
                 <ul class="ourapartsment">
-                    <li class="ourapartsment-item">
-                        <img class="ourapartsment-img" src="./assets/images/1.jpg" alt="Стандарт — 1 поверх">
-                        <span class="ourapartsment-text">Стандарт — 1 поверх</span>
+                    <li class="ourapartsment-item-wrap">
+                        <div class="ourapartsment-item">
+                            <img class="ourapartsment-img" src="./assets/images/1.jpg" alt="Стандарт — 1 поверх">
+                            <span class="ourapartsment-text">Стандарт — 1 поверх</span>
+                            <div class="ourapartsment-overlay">
+                                 <p>
+                                Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі з
+                                натурального дерева. Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів
+                                виходять у двір і місто. Максимальне розміщення гостей в номері - 3.
+                                </p>
+                            </div>
+                        </div>
                     </li>
-                    <li class="ourapartsment-item">
+                    <li class="ourapartsment-item-wrap">
+                        <div class="ourapartsment-item">
                         <img class="ourapartsment-img" src="./assets/images/2.jpg" alt="Комфорт — 2 поверхи">
                         <span class="ourapartsment-text">Комфорт — 2 поверхи</span>
+                        </div>
                     </li>
-                   <li class="ourapartsment-item">
+                   <li class="ourapartsment-item-wrap">
+                    <div class="ourapartsment-item">
                         <img class="ourapartsment-img" src="./assets/images/3.jpg" alt="Люкс — 3 поверхи">
                         <span class="ourapartsment-text">Люкс — 3 поверхи</span>
+                    </div>
                     </li>
-                    <li class="ourapartsment-item">
+                    <li class="ourapartsment-item-wrap">
+                        <div class="ourapartsment-item">
                         <img class="ourapartsment-img" src="./assets/images/4.jpg" alt="Супер Люкс — 4 поверхи">
                         <span class="ourapartsment-text">Супер Люкс — 4 поверхи</span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -161,7 +180,7 @@
         <section id="prices section">
             <div class="container">
                 <!-- Prices -->
-                <h3 class="our-title">Ціни</h3>
+                <h3 class="our-title" data-aos="zoom-in-down">Ціни</h3>
                 <p class="caption">Каталог типів квартир за ціною</p>
                 <table class="prices-table">
                     <thead>
@@ -204,7 +223,7 @@
         <section class="call-to-action section">
             <div class="container">
                 <!-- Запис на огляд -->
-                <h2 class="our-title">Хочете подивитися?</h2>
+                <h2 class="our-title" data-aos="zoom-in-down">Чи бажаєте подивитися?</h2>
                 <p>
                     Житловий комплекс в історичному центрі міста 
                     HouseVOP завершив будівництво та здав об’єкт в 
@@ -215,13 +234,13 @@
                     щось нове - вже немає. Якщо у когось є ідея - завжди
                      велкам!
                 </p>
-                <button class="button">Подивитись район</button>
+                <button class="button" type="button" data-modal-open>Подивитись район</button>
             </div>
         </section>
         <section class="video-section section">
             <div class="container">
                 <!-- Video -->
-                <h2 class="title">Biдео огляд житлового комплексу</h2>
+                <h2 class="title" data-aos="zoom-in-down">Biдео огляд житлового комплексу</h2>
                 <div class="video-section-inner">
                     <video class="video-section-content" controls autoplay loop muted>
                         <source src="./assets/videos/ukraine_will_win.webm" type="video/webm">
@@ -240,7 +259,7 @@
         <section class="section">
             <div class="container">
                 <!-- Mapa -->
-                <h2 class="our-title">Район на мапі</h2>
+                <h2 class="our-title" data-aos="zoom-in-down">Район на мапі</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1373.9350864428409!2d30.762552426138054!3d46.47107950372277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6316e8b619c7d%3A0x2b864f4bf8706fe9!2z0J_QsNC70YzQvNCw!5e0!3m2!1sru!2sua!4v1655368072065!5m2!1sru!2sua"
                     width="100%" 
@@ -335,5 +354,22 @@
             </div>
         </section>
     </footer>
+    <!-- Модальнон окно -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close>
+                X
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Биюлиотека анимации -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
