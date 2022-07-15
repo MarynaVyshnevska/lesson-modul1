@@ -361,6 +361,116 @@
             <button class="modal-close-button" type="button" data-modal-close>
                 X
             </button>
+            <div class="modal-inner">
+                <h2 class="modal-title title">Чи бажаєте подивитися?</h2>
+                <form class="form" name="main-form" novalidate autocomplete="on">
+                    <h3 class="form-field-title">Контактна інформація</h3>
+                    <div class="form-field">
+                        <label class="form-fiel-label" for="user-name" >
+                            Введіть ім’я *
+                        </label>
+                        <div class="form-field-inner">
+                            <input 
+                                class="form-field-input" 
+                                id="user-name" 
+                                type="text" 
+                                name="user-name" 
+                                placeholder="Іван"
+                            >
+                            <svg class="form-field-icon" aria-hidden="true">
+                                <use href="./assets/images/icons.svg#instagram"></use>
+                            </svg>
+                        </div>
+                        
+                        <!-- <label>
+                            <input>
+                            <svg></svg>
+                        </label> -->
+                    </div>
+                    <div class="form-field">
+                        <label class="form-fiel-label" for="user-email" >
+                            Введіть e-mail *
+                        </label>
+                        <input 
+                            class="form-field-input" 
+                            id="user-email" 
+                            type="email" 
+                            name="user-email" 
+                            placeholder="example@mail.com"
+                        >
+                    </div>
+                    <div class="form-field">
+                        <label class="form-fiel-label" for="user-phone" >
+                            Введіть телефон
+                        </label>
+                        <input 
+                            class="form-field-input" 
+                            id="user-phone" 
+                            type="tel" 
+                            name="user-phone" 
+                            placeholder="099 122 22 21"
+                        >
+                    </div>
+                    <div class="form-field">
+                        <label class="form-fiel-label" for="user-password">
+                            Введіть пароль
+                        </label>
+                        <input class="form-field-input" id="user-password" type="password" name="user-password" placeholder="*****">
+                    </div>
+
+                    <h3 class="form-field-title">Інформація про квартиру</h3>
+                    <div class="form-field">
+                        <label class="form-fiel-label" for="flat-type">
+                            Оберіть тип квартири *
+                        </label>
+                        <select class="form-field-input" name="flat-type" id="flat-type">
+                            <option value="1">Стандарт — 1 поверх</option>
+                            <option value="2">Комфорт — 2 поверхи</option>
+                            <option value="3" selected>Люкс — 3 поверхи</option>
+                            <option value="4">Супер Люкс — 4 поверхи</option>
+                        </select>
+                        <!-- <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder="example@mail.com"> -->
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-useful">
+                            Наскільки вам зручне містознаходження?
+                        </label>
+                        <input class="form-field-range" id="user-useful" type="range" name="user-useful" min="1" max="10" value="7" step="0.5"> 
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="flat-term">
+                            На який термін плануєте купувати житло? (від 1 до 100 років)
+                        </label>
+                        <input class="form-field-input" id="flat-term" type="number" name="flat-term" min="1" max="100" value="10" step="1">
+                    </div>
+                    <div class="form-field">
+                        <label class="form-field-label" for="flat-date">
+                            Оберіть дату i час перегляду квартири *
+                        </label>
+                        <input class="form-field-input" id="flat-date" type="datetime-local" name="flat-date" >
+                    </div>
+
+                    <h3 class="form-field-title">Додаткова інформація</h3>
+                    <div class="form-field">
+                        <label class="form-field-label" for="user-comment">
+                            Введіть коментар
+                        </label>
+                        <textarea class="form-field-input form-field-textarea" name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Моє побажання..."></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input  id="terms-condition" type="checkbox" name="terms-condition">
+                        <label class="form-field-label" for="terms-condition">
+                            Я згоден з правами використання введених особистих даних.
+                        </label>
+                        
+                    </div>
+                    <div class="form-field">
+                        <button class="form-field-button button" type="submit">Подивитись район</button>
+                    </div>
+                    
+                    <p><i>Ми нікому не передаємо ваші дані. I не зберігаємо ваш номер у базу.</i></p>
+                </form>
+            </div>
         </div>
 
     </div>

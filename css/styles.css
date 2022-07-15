@@ -65,12 +65,14 @@ img {
 :root {
     --color-primary: #fff;
     --color-accent: #d4c17f;
+    --color-placeholder-modal: #bebebe;
     
     --font-family-primary: 'Raleway', sans-serif;
     --font-family-title: 'Playfair Display', serif;
     
     --color-background-primary: #242b33;
     --color-background-secondary: #2D343C;
+    --color-background-modal: #565b60;
 }
 /* UI Components */
 /* Base */
@@ -413,13 +415,13 @@ section {
 
 .ourapartsment-overlay {
     width: 100%;
-    height: 100px;
+    height: 100%;
     padding: 24px 32px;
     background-color: var(--color-background-primary);
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(500%);
+    transform: translateY(100%);
     transition: transform 1s;
     opacity: 0.8;
 }
@@ -528,6 +530,66 @@ section {
     justify-content: space-between;
 }
 
+/* Form field */
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+.form-field-title {
+    margin-bottom: 16px;
+}
+
+.form-fiel-label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form-field-inner {
+    position: relative;
+    
+
+}
+
+.form-field-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary);
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-field-input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-background-modal);
+    border: 0;
+    font-family: inherit;
+    padding: 12px 40px;
+    color: var(--color-primary);
+
+}
+
+.form-field-input::placeholder {
+    color: var(--color-placeholder-modal);
+}
+
+.form-field-range {
+    width: 100%;
+
+}
+
+.form-field-textarea {
+    height: 140px;
+    resize: none;
+}
+
+.form-field-button {
+    width: 100%;
+}
+
 /* Модальноe окно */
 
 
@@ -549,7 +611,8 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 540px;
-    min-height: 640px;
+    max-height: 400px;
+    overflow-y: auto;
     background-color: var(--color-background-primary);
     z-index: 0;
     box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.25);
@@ -568,4 +631,17 @@ section {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-inner {
+    padding: 40px 49px;
+}
+
+.modal-title {
+    font-family: var(--font-family-title);
+    font-weight: 700;
+    color: var(--color-accent);
+    font-size: 36px;
+    line-height: 1.33;
+    margin-bottom: 32px;
 }
